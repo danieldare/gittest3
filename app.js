@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-
+app.get('/login', (req, res) => {
+    res.send(`Login successful`)
+})
 
 
 const port = 5000 || process.env.port;
