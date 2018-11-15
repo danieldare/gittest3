@@ -3,7 +3,9 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-
+app.get('/', (req, res) => {
+    res.send(`Hello from Here`)
+})
 
 
 const port = 5000 || process.env.port;
