@@ -3,6 +3,12 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+
+app.get('/', (req, res) => {
+    res.send(`Hello from Here`)
+})
+
+
 app.get('/login', (req, res) => {
     res.send(`Login successful`)
 })
