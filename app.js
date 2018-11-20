@@ -7,6 +7,9 @@ app.get('/login', (req, res) => {
     res.send(`Login successful`)
 })
 
+app.post('/login', (req, res) => {
+    res.send(`Login successful!!!`)
+})
 
 const port = 5000 || process.env.port;
 app.listen(port, () => {
